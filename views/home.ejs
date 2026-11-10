@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Firebase</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <main class="contenedor">
+        <h1>Bienvenido</h1>
+
+        <p>Has iniciado sesión correctamente.</p>
+
+        <div class="datos">
+            <h3>Datos del usuario</h3>
+
+            <p>
+                <strong>Correo:</strong>
+                <%= email %>
+            </p>
+
+            <p>
+                <strong>UID:</strong>
+                <span class="uid"><%= uid %></span>
+            </p>
+        </div>
+
+        <a href="/logout" class="boton-salir">
+            Cerrar sesión
+        </a>
+    </main>
+
+</body>
+</html>
